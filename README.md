@@ -37,7 +37,7 @@
 
 ## About the UserScript
 
-![Image example for status](https://i.imgur.com/t1PnoV5.gif)
+![Image example for status](https://i.imgur.com/s2S41mD.gif)
 
 As you can see, all this really adds is just three more options for the status. On the top of the gif, it is also visible, how my Steam desktop client changes the online status too.
 
