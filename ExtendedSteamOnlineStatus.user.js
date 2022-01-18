@@ -1,11 +1,13 @@
 // ==UserScript==
 // @name         ExtendedSteamOnlineStatus
-// @namespace    https://github.com/NetroScript/ExtendedSteamOnlineStatus
+// @namespace    https://github.com/NetroScript
 // @version      0.1
 // @description  Add Busy, Looking to Play and Looking to Trade back to the Steam Chat
 // @author       NetroScript
 // @match        https://steamcommunity.com/chat
 // @icon         https://steamcommunity.com/favicon.ico
+// @downloadURL  https://github.com/NetroScript/ExtendedSteamOnlineStatus/raw/master/ExtendedSteamOnlineStatus.user.js
+// @updateURL    https://github.com/NetroScript/ExtendedSteamOnlineStatus/raw/master/ExtendedSteamOnlineStatus.meta.js
 // @grant        none
 // @run-at       document-start
 // @require      https://code.jquery.com/jquery-3.6.0.slim.js
@@ -67,7 +69,7 @@ window.setPersonaState = (state = 1) => {
     // When the document is ready
     $(() => {
 
-        // Create an observer
+        // Create an observer to track changes of the DOM (specifically the pop up menu)
         const observer = new MutationObserver((mutations)=>{
             // Keep track of added nodes
             let addedNodes = [];
